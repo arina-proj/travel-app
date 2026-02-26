@@ -1,0 +1,29 @@
+.section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+
+  h1 {
+    color: #e0dbde;
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 2em;
+  }
+  > div {
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #161617;
+    opacity: 90%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.wrapper{
+    margin: 0 20px;
+    >button{
+        display: inline-flex;
+        border-radius: 30px;
+        border: 1px solid rgb(128, 126, 127, 0.3);
+        color: rgba(255,255,255,0.7);
+        transition: border 0.8s ease;
+        margin:  5px 5px;
+        padding: 5px 10px;
+        &.active{
+            border-color: rgba(#eb601e,0.5);;
+        }
+    }
+}

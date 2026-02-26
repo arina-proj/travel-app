@@ -1,0 +1,55 @@
+.wrapper {
+  width: 80%;
+  margin: 50% auto 20px;
+  backdrop-filter: blur(5px);
+  padding: 0px 20px 10px;
+  color: #a8a3a6;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 30px;
+  background-color: rgba(97, 97, 97, 0.15);
+  position: relative;
+  > span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    > h2 {
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+    .icon {
+      display: block;
+      transform: scale(1.8);
+      color: white;
+    }
+    > button {
+      display: inline-flex;
+      border-radius: 30px;
+      border: 1px solid rgb(128, 126, 127, 0.3);
+      color: rgba(255, 255, 255, 0.7);
+      margin: 10px 5px;
+      gap: 5px;
+      font-size: 15px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapContainer {
+  width: calc(100% + 30px); // Компенсируем горизонтальные padding'и wrapper'а
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 5px;
+  height: 170px; // Фиксированная высота или используйте aspect-ratio
+  overflow: hidden;
+  > Map {
+    overflow: hidden;
+  }
+}

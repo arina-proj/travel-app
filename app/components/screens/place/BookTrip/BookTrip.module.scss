@@ -1,0 +1,45 @@
+.button {
+  background-color: rgba(75, 75, 75, 0.8);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 30px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 5px 15px 5px 5px;
+  gap: 10px;
+  color: white;
+  transition: all 1.5s ease;
+  
+  > .icon {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    order: 1;
+    &Active {
+      order: 2;
+    }
+  }
+  .text {
+    order: 2;
+    &Active {
+      order: 1;
+    }
+  }
+
+  &.active {
+    background-color: #eb601e;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 5px 5px 5px 15px;
+    gap: 10px;
+    color: white;
+    padding: 5px 5px 5px 15px;
+  }
+}
